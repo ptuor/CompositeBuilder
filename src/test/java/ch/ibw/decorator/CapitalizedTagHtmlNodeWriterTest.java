@@ -24,7 +24,7 @@ public class CapitalizedTagHtmlNodeWriterTest {{
 
       String html = CapitalizedTagHtmlNodeWriter.create().write(root);
 
-      expect(html).toEqual("<html><A href='about:blank'></A><SPAN></SPAN></HTML>");
+      expect(html).toEqual("<HTML><A href='about:blank'></A><SPAN></SPAN></HTML>");
     });
   });
 }}

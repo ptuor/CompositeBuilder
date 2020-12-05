@@ -3,13 +3,14 @@ package ch.ibw;
 import ch.ibw.visitor.CompositeVisitor;
 
 public class HtmlNode extends AttributedCompositeNode {
-  private String name;
+  public String name;
 
   private HtmlNode(String name) {
     super();
     this.name = name;
   }
 
+  @Override
   public void accept(CompositeVisitor visitor) {
     visitor.visit(this);
   }

@@ -3,7 +3,7 @@ package ch.ibw;
 import ch.ibw.visitor.CompositeVisitor;
 
 public class HtmlNode extends AttributedCompositeNode {
-  public String name;
+  private String name;
 
   private HtmlNode(String name) {
     super();

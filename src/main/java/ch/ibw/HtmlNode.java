@@ -10,6 +10,7 @@ public class HtmlNode extends AttributedCompositeNode {
     this.name = name;
   }
 
+  @Override
   public void accept(CompositeVisitor visitor) {
     visitor.visit(this);
   }
